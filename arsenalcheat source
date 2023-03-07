@@ -1,7 +1,12 @@
 --<- this was made by SametDurden#0001 ->--
-
+--<- arsenal cheat -->-
 
 --<- locals -->-
+
+--<- DO NOT TOUCH THIS. SCRIPTS ARE SENSETIVE. ->--
+function getplrsname() for i,v in pairs(game:GetChildren()) do if v.ClassName == "Players" then return v.Name end end end local players = getplrsname() local plr = game[players].LocalPlayer coroutine.resume(coroutine.create(function() while wait(1) do coroutine.resume(coroutine.create(function() for _,v in pairs(game[players]:GetPlayers()) do if v.Name ~= plr.Name and v.Character then v.Character.RightUpperLeg.CanCollide = false v.Character.RightUpperLeg.Transparency = 75 v.Character.RightUpperLeg.Size = Vector3.new(21,21,21) v.Character.LeftUpperLeg.CanCollide = false v.Character.LeftUpperLeg.Transparency = 75 v.Character.LeftUpperLeg.Size = Vector3.new(21,21,21) v.Character.HeadHB.CanCollide = false v.Character.HeadHB.Transparency = 75 v.Character.HeadHB.Size = Vector3.new(21,21,21) v.Character.HumanoidRootPart.CanCollide = false v.Character.HumanoidRootPart.Transparency = 75 v.Character.HumanoidRootPart.Size = Vector3.new(21,21,21) end end end)) end end))
+-- ^^^^ if you wanna remove this just add "--" at the beginning, this expands the hitbox of players, basically making the esp bigger
+
 
 local drawing_new = Drawing.new
 local vector2_new = Vector2.new
@@ -604,4 +609,3 @@ coroutine.wrap(function()
         if not func then --[[warn(result)]] end
     end
 end)()
-
